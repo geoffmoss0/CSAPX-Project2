@@ -5,6 +5,7 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.control.Label;
 
 import place.PlaceBoard;
 
@@ -25,6 +26,8 @@ public class PlaceGUI extends Application implements Observer {
     public void start(Stage primaryStage) throws Exception {
 
         BorderPane border = new BorderPane();
+        //TODO make username work
+        border.setTop(new Label("Place: **username** "));
         GridPane grid = new GridPane();
         Scene scene = new Scene(border);
         primaryStage.show();
